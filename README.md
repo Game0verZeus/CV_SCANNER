@@ -2,8 +2,6 @@
 
 🚀 **CV Scanner** is a Flask-based web application that analyzes resumes and compares them against a job description to generate a **compatibility score (0-100)**. It helps HR professionals and job seekers quickly evaluate resumes based on **keyword matching** and **readability**.
 
-![CV Scanner Demo](https://your-image-url.com/demo.png) *(Optional: Add a screenshot of your UI here)*
-
 ---
 
 ## ⚡ Features
@@ -19,35 +17,33 @@
 
 ## 🛠️ Installation
 
-### **1. Clone the Repository**
+### 1️⃣ Clone the Repository
 ```bash
 git clone git@github.com:Game0verZeus/CV_SCANNER.git
 cd CV_SCANNER
-2. Create a Virtual Environment (Recommended)
-bash
-Copier
-Modifier
+2️⃣ Create a Virtual Environment (Recommended)
+
 python -m venv venv
 source venv/bin/activate  # For macOS/Linux
 venv\Scripts\activate     # For Windows
-3. Install Dependencies
+3️⃣ Install Dependencies
 bash
 Copier
 Modifier
 pip install -r requirements.txt
 🚀 Usage
-1. Start the Web Application
+1️⃣ Start the Web Application
 bash
 Copier
 Modifier
 python app.py
 The application will be available at: http://127.0.0.1:5000
 
-2. Upload a Resume & Job Description
+2️⃣ Upload a Resume & Job Description
 Click "Choose File" to upload a resume in PDF or DOCX format.
 Copy-paste the job description into the text area.
 Click "Analyze" to get the results.
-3. View Results
+3️⃣ View Results
 🎯 Match Score: How well the resume aligns with the job description.
 🔑 Keywords Found/Missing: Which keywords from the job description are in the resume.
 📖 Readability Score: Indicates how easy the resume is to read.
