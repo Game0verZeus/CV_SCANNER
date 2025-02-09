@@ -21,6 +21,7 @@
 ```bash
 git clone git@github.com:Game0verZeus/CV_SCANNER.git
 cd CV_SCANNER
+
 2️⃣ Create a Virtual Environment (Recommended)
 
 python -m venv venv
