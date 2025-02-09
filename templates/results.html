@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Résultats de l'analyse</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <style>
+      .sidebar {
+          background-color: #f8f9fa;
+          padding: 15px;
+          border-radius: 5px;
+      }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1 class="mt-5">Résultats de l'analyse</h1>
+    <div class="row">
+        <div class="col-md-8">
+            <h3>Score global : {{ results.overall_score }} / 100</h3>
+            <p><strong>Score de correspondance des mots-clés :</strong> {{ results.keyword_match_score }} / 100</p>
+            <p><strong>Score de lisibilité :</strong> {{ results.readability_score }} / 100</p>
+            <hr>
+            <h4>Mots-clés extraits :</h4>
+            <ul>
+                {% for kw in results.keywords %}
+                <li>{{ kw }}</li>
+                {% endfor %}
+            </ul>
+            <h4>Mots-clés trouvés :</h4>
+            <ul>
+                {% for kw in results.matched_keywords %}
+                <li>{{ kw }}</li>
+                {% endfor %}
+            </ul>
+            <h4>Mots-clés manquants :</h4>
+            <ul>
+                {% for kw in results.missing_keywords %}
+                <li>{{ kw }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="col-md-4 sidebar">
+            <h4>Insights</h4>
+            <p>{{ results.insights }}</p>
+        </div>
+    </div>
+    <a href="{{ url_for('index') }}" class="btn btn-secondary mt-3">Analyser un autre CV</a>
+</div>
+</body>
+</html>

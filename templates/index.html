@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Analyseur de CV</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <h1 class="mt-5">Analyseur de CV</h1>
+    <p>Veuillez télécharger votre CV (PDF ou DOCX) et saisir la description de poste.</p>
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+      <div class="alert alert-warning" role="alert">
+        {% for message in messages %}
+          <p>{{ message }}</p>
+        {% endfor %}
+      </div>
+      {% endif %}
+    {% endwith %}
+    <form method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="resume">Télécharger le CV :</label>
+            <input type="file" class="form-control-file" id="resume" name="resume" required>
+        </div>
+        <div class="form-group">
+            <label for="job_description">Description de poste :</label>
+            <textarea class="form-control" id="job_description" name="job_description" rows="6" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Analyser</button>
+    </form>
+</div>
+</body>
+</html>
