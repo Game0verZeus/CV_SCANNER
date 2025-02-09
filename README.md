@@ -20,10 +20,10 @@
 ## 🛠️ Installation
 
 ### **1. Clone the Repository**
-```bash
+
 git clone git@github.com:Game0verZeus/CV_SCANNER.git
 cd CV_SCANNER
-
+```bash
 2. Create a Virtual Environment (Recommended)
 bash
 Copier
