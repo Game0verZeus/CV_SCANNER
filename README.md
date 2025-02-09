@@ -2,7 +2,7 @@
 
 🚀 **CV Scanner** is a Flask-based web application that analyzes resumes and compares them against a job description to generate a **compatibility score (0-100)**. It helps HR professionals and job seekers quickly evaluate resumes based on **keyword matching** and **readability**.
 
-![CV Scanner Demo]([https://your-image-url.com/demo.png](https://i.ibb.co/VYhxSnVf/Screenshot-2025-02-09-201527.png)) *(Optional: Add a screenshot of your UI here)*
+![CV Scanner Demo](https://your-image-url.com/demo.png) *(Optional: Add a screenshot of your UI here)*
 
 ---
 
@@ -23,6 +23,7 @@
 ```bash
 git clone git@github.com:Game0verZeus/CV_SCANNER.git
 cd CV_SCANNER
+
 2. Create a Virtual Environment (Recommended)
 bash
 Copier
